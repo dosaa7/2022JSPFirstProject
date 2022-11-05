@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up</title>
+</head>
+<body>
+<h1 style="color:blue;">Please fill in the information</h1>
+<form name="form" action="form_ok.jsp" method="post">
+    <fieldset>
+        <legend>form</legend>
+        <lable for="name">Name: </lable><br>
+        <input type="text" id="name" name="name"><br><br>
+        <lable for="age">Age: </lable><br>
+        <input type="text" id="age" name="age"><br><br>
+        <lable for="school">School name: </lable><br>
+        <input type="text" id="school" name="school"><br><br>
+        <lable for="gender">Gender</lable><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <lable for="male">Male</lable>
+        <input type="radio" id="female" name="gender" value="Female">
+        <lable for="female">Female</lable><br><br>
+        Languages<br>
+        <input type="checkbox" id="language1" name="language" value="Korean">
+        <lable for="language1">Korean</lable>
+        <input type="checkbox" id="language2" name="language" value="English">
+        <lable for="language2">English</lable>
+        <input type="checkbox" id="language3" name="language" value="C">
+        <lable for="language3">C</lable>
+        <input type="checkbox" id="language4" name="language" value="Java">
+        <lable for="language4">Java</lable><br><br>
+        <lable for="email">Email</lable><br>
+        <input type="text" id="email" name="email1"> @
+        <select name="email">
+            <option value="naver">naver.com</option>
+            <option value="google">google.com</option>
+            <option value="daum">hanmail.net</option>
+            <option value="paran">paran.com</option>
+            <option value="handong">handong.ac.kr</option>
+        </select><br><br>
+        <lable for="address">Address</lable><br>
+        <select name="address" id="address">
+            <optgroup label="gyeonggi-do">
+                <option value="suwon">Suwon</option>
+                <option value="gunpo">Gunpo</option>
+                <option value="gapyeong">Gapyeong</option>
+            </optgroup>
+            <optgroup label="gyeongsang-bukdo">
+                <option value="andong">Andong</option>
+                <option value="gumi">Gumi</option>
+                <option value="pohang">Pohang</option>
+            </optgroup>
+        </select><br><br>
+        <lable for="ides">Choose your IDE</lable>
+        <input list="ide" name="ides" id="ides">
+
+        <datalist id="ide">
+            <option value="Visual Studio" />
+            <option value="Atom" />
+            <option value="Racket" />
+            <option value="Qtspim" />
+        </datalist><br><br>
+        <lable for="birthday">Birthday: </lable>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <hr color="blue"><br>
+        How are you feeling?<br><br>
+        <textarea rows="10" cols="30" name="feeling"></textarea><br><br>
+
+
+
+        <input type="submit" value="send">
+    </fieldset>
+</form><br>
+</body>
+</html>
